@@ -22,3 +22,14 @@ This build includes the full LP improvement set discussed:
 Hero copy:
 Learn the culture behind workplace English.
 Understand what people really mean. Know what to say next. Work smoother. Grow further.
+
+
+## v4.1 updates
+
+- Reduced How it works image area height to prevent stretched/oversized cards.
+- Improved final CTA spacing and image sizing.
+- Added AEO definition line after Hero.
+- Added FAQ and JSON-LD for voice upload / text-to-speech.
+- Tightened CTA copy and added “No signup. No credit card. Opens in your browser.”
+- Reinforced culture-first copy consistency.
+- Improved header Start Free button centering and mobile sizing.
