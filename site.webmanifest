@@ -1,0 +1,10 @@
+{
+  "name": "Workwise English",
+  "short_name": "Workwise",
+  "description": "Workplace English practice with culture notes and real workplace scenarios.",
+  "start_url": "/",
+  "display": "standalone",
+  "background_color": "#fbfdff",
+  "theme_color": "#11868d",
+  "icons": []
+}

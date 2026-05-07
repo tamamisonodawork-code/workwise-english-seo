@@ -1,0 +1,61 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Practice — Workwise English</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&family=Manrope:wght@600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="/assets/css/style.css">
+</head>
+<body class="page-shell" data-page="practice">
+<header class="site-header">
+  <div class="container header-inner">
+    <a class="brand" href="/"><span class="brand-mark">W</span><span>Workwise English</span></a>
+    <div class="header-actions"><a class="btn btn-soft" href="/">Landing Page</a></div>
+  </div>
+</header>
+<div class="app-layout">
+  <aside class="sidebar">
+    <nav class="side-nav">
+      <a class="side-link" data-nav="dashboard" href="/app/">🏠 Dashboard</a>
+      <a class="side-link" data-nav="practice" href="/practice/">🎯 Practice</a>
+      <a class="side-link" data-nav="review" href="/review/">🔁 Review</a>
+      <a class="side-link" data-nav="progress" href="/progress/">📈 Progress</a>
+      <a class="side-link" data-nav="notebook" href="/notebook/">📝 Notebook</a>
+      <a class="side-link" data-nav="settings" href="/settings/">⚙️ Settings</a>
+    </nav>
+    <div class="info-box">
+      <strong>Free for learners</strong>
+      <p style="margin:8px 0 0;">No login, no install, browser-based learning.</p>
+    </div>
+  </aside>
+  <main class="app-main">
+
+<div class="app-header"><div><h1 class="page-title">Practice</h1><p>Real workplace conversation practice.</p></div><div class="tag-row" id="practiceTags"></div></div>
+<div class="card pad" style="margin-bottom:20px"><h3>Quick switch</h3><div class="cta-row" id="practiceChooser"></div></div>
+<div class="two-col">
+  <section>
+    <div class="card screen-card" style="margin-bottom:20px"><img src="/assets/images/app/practice-screen.png" alt="Practice screen mockup"><div class="pad"><div class="eyebrow" id="practiceCategory">Requests</div><h3 id="practiceTitle">Ask for more time</h3><p id="practicePrompt"></p></div></div>
+    <div class="card pad" style="margin-bottom:20px"><h4>Your first response</h4><div class="example" id="practiceResponse"></div><h4 style="margin-top:18px">Suggested better response</h4><div class="better" id="practiceBetter"></div></div>
+  </section>
+  <section>
+    <div class="card pad" style="margin-bottom:20px"><h3>Why this works</h3><p id="practiceTip"></p><div class="cta-row"><button class="btn btn-soft" onclick="speak(document.getElementById('practiceBetter').textContent)">🔊 Listen</button><button class="btn btn-primary" onclick="completePractice()">Mark as practiced</button></div></div>
+    <div class="card pad"><h3>Culture note</h3><p>Workplace English often balances clarity with tone. You usually want to sound cooperative, not abrupt.</p></div>
+  </section>
+</div>
+
+  </main>
+</div>
+<nav class="mobile-nav">
+  <div class="inner">
+    <a data-nav="dashboard" href="/app/">Home</a>
+    <a data-nav="practice" href="/practice/">Practice</a>
+    <a data-nav="review" href="/review/">Review</a>
+    <a data-nav="progress" href="/progress/">Progress</a>
+  </div>
+</nav>
+<script src="/assets/js/app.js"></script>
+</body>
+</html>

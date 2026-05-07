@@ -1,0 +1,57 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Notebook — Workwise English</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&family=Manrope:wght@600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="/assets/css/style.css">
+</head>
+<body class="page-shell" data-page="notebook">
+<header class="site-header">
+  <div class="container header-inner">
+    <a class="brand" href="/"><span class="brand-mark">W</span><span>Workwise English</span></a>
+    <div class="header-actions"><a class="btn btn-soft" href="/">Landing Page</a></div>
+  </div>
+</header>
+<div class="app-layout">
+  <aside class="sidebar">
+    <nav class="side-nav">
+      <a class="side-link" data-nav="dashboard" href="/app/">🏠 Dashboard</a>
+      <a class="side-link" data-nav="practice" href="/practice/">🎯 Practice</a>
+      <a class="side-link" data-nav="review" href="/review/">🔁 Review</a>
+      <a class="side-link" data-nav="progress" href="/progress/">📈 Progress</a>
+      <a class="side-link" data-nav="notebook" href="/notebook/">📝 Notebook</a>
+      <a class="side-link" data-nav="settings" href="/settings/">⚙️ Settings</a>
+    </nav>
+    <div class="info-box">
+      <strong>Free for learners</strong>
+      <p style="margin:8px 0 0;">No login, no install, browser-based learning.</p>
+    </div>
+  </aside>
+  <main class="app-main">
+
+<div class="app-header"><div><h1 class="page-title">Notebook</h1><p>Save the better phrases you want to remember.</p></div></div>
+<div class="two-col">
+  <section class="card screen-card"><img src="/assets/images/app/notebook-screen.png" alt="Notebook screen mockup"><div class="pad"><h3>Mistake notebook</h3><p>Save what you want to review later.</p></div></section>
+  <section>
+    <div class="card pad" style="margin-bottom:20px"><div class="form-stack"><div><label for="noteTitle">Title</label><input id="noteTitle" placeholder="Example: Asking for more time"></div><div><label for="noteBetter">Better response</label><textarea id="noteBetter" placeholder="Write the better version here"></textarea></div><div><label for="noteWhy">Why this works</label><textarea id="noteWhy" placeholder="Explain the tone or wording"></textarea></div><button class="btn btn-primary" onclick="addNote()">Save note</button></div></div>
+    <div class="list" id="noteList"></div>
+  </section>
+</div>
+
+  </main>
+</div>
+<nav class="mobile-nav">
+  <div class="inner">
+    <a data-nav="dashboard" href="/app/">Home</a>
+    <a data-nav="practice" href="/practice/">Practice</a>
+    <a data-nav="review" href="/review/">Review</a>
+    <a data-nav="progress" href="/progress/">Progress</a>
+  </div>
+</nav>
+<script src="/assets/js/app.js"></script>
+</body>
+</html>
