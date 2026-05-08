@@ -35,11 +35,8 @@ Understand what people really mean. Know what to say next. Work smoother. Grow f
 - Improved header Start Free button centering and mobile sizing.
 
 
-## v4.8 clean responsive design
+## v4.2 mobile Hero fix
 
-- Replaced accumulated CSS overrides with a clean stylesheet.
-- Switched headline typography to Plus Jakarta Sans for a more polished look.
-- Created a new mobile Hero graphic with no dead space.
-- Created a new mobile Final CTA graphic with no face/blank-space risk.
-- Mobile Hero keeps the image visible, compact, and first in the flow.
-- Mobile text hierarchy, CTA spacing, and image sizing were rebuilt.
+- Replaced the mobile hero image with an app-focused visual instead of a text-heavy full hero image.
+- Mobile now shows the HTML copy first, then the app image.
+- This prevents duplicated tiny text inside the image and keeps the first view easier to understand.
