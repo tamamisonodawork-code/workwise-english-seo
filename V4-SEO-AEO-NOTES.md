@@ -33,3 +33,13 @@ Understand what people really mean. Know what to say next. Work smoother. Grow f
 - Tightened CTA copy and added “No signup. No credit card. Opens in your browser.”
 - Reinforced culture-first copy consistency.
 - Improved header Start Free button centering and mobile sizing.
+
+
+## v4.8 clean responsive design
+
+- Replaced accumulated CSS overrides with a clean stylesheet.
+- Switched headline typography to Plus Jakarta Sans for a more polished look.
+- Created a new mobile Hero graphic with no dead space.
+- Created a new mobile Final CTA graphic with no face/blank-space risk.
+- Mobile Hero keeps the image visible, compact, and first in the flow.
+- Mobile text hierarchy, CTA spacing, and image sizing were rebuilt.
