@@ -35,8 +35,9 @@ Understand what people really mean. Know what to say next. Work smoother. Grow f
 - Improved header Start Free button centering and mobile sizing.
 
 
-## v4.2 mobile Hero fix
+## v4.3 GitHub upload-ready updates
 
-- Replaced the mobile hero image with an app-focused visual instead of a text-heavy full hero image.
-- Mobile now shows the HTML copy first, then the app image.
-- This prevents duplicated tiny text inside the image and keeps the first view easier to understand.
+- Added a mobile-first Hero image that immediately explains the app on smartphone screens.
+- Mobile now shows the Hero image before the HTML copy.
+- Added the clear “Too direct → More professional” visual as the difference/explanation image.
+- Kept SEO/AEO metadata, FAQPage JSON-LD, WebApplication JSON-LD, robots.txt, sitemap.xml, and mobile CTA fixes.

@@ -1266,29 +1266,70 @@ h1, h2 {
 }
 
 
-/* ===== v4.2 mobile hero fix =====
-   Mobile was showing a text-heavy vertical hero image above the actual HTML copy.
-   Fix: show copy first, then an app-only image. */
+/* ===== v4.3 GitHub-ready mobile first-view fix =====
+   Mobile users must immediately understand what the app is.
+   Show the mobile-first hero image first, then the HTML copy and CTA. */
+.difference-example {
+  grid-column: 1 / -1;
+  margin: 26px 0 0;
+  padding: 0;
+}
+.difference-example img {
+  width: 100%;
+  display: block;
+  border-radius: 26px;
+  border: 1px solid rgba(16,35,74,.08);
+  box-shadow: 0 22px 64px rgba(16,35,74,.10);
+  background: #fff;
+}
+.difference-example figcaption {
+  margin-top: 12px;
+  color: #4b5d76;
+  font-weight: 700;
+  text-align: center;
+}
 @media (max-width: 720px) {
-  .hero-v4 .hero-copy {
-    order: 1 !important;
+  .hero-v4 {
+    padding-top: 12px;
+  }
+  .hero-v4-grid {
+    gap: 18px;
   }
   .hero-v4 .hero-visual-v4 {
+    order: 1 !important;
+  }
+  .hero-v4 .hero-copy {
     order: 2 !important;
   }
-  .hero-v4 {
-    padding-top: 22px;
+  .hero-v4 .hero-visual-v4 img {
+    width: 100%;
+    max-height: 520px;
+    object-fit: contain;
+    border-radius: 22px;
   }
   .hero-v4 .hero-eyebrow {
     margin-top: 4px;
+    margin-bottom: 12px;
   }
-  .hero-v4 .hero-visual-v4 img {
-    max-height: none;
-    width: 100%;
-    object-fit: contain;
+  .hero-v4 h1 {
+    font-size: clamp(34px, 9.4vw, 44px);
+    line-height: 1.03;
+  }
+  .hero-lead {
+    font-size: 16px;
+    line-height: 1.55;
+  }
+  .definition-line {
+    margin-top: 14px;
+  }
+  .difference-example {
+    margin-top: 20px;
+  }
+  .difference-example img {
     border-radius: 20px;
   }
-  .hero-v4-grid {
-    gap: 22px;
+  .difference-example figcaption {
+    text-align: left;
+    font-size: 13px;
   }
 }
