@@ -38,3 +38,7 @@ Progress is saved in the user’s browser. Use Export / Import to back up or mov
 ## v4.3
 
 GitHub upload-ready build with mobile-first Hero image and before/after difference image.
+
+## v4.4
+
+Mobile-first Hero rebuild with compact HTML app preview for clearer smartphone first view.

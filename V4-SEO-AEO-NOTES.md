@@ -41,3 +41,13 @@ Understand what people really mean. Know what to say next. Work smoother. Grow f
 - Mobile now shows the Hero image before the HTML copy.
 - Added the clear “Too direct → More professional” visual as the difference/explanation image.
 - Kept SEO/AEO metadata, FAQPage JSON-LD, WebApplication JSON-LD, robots.txt, sitemap.xml, and mobile CTA fixes.
+
+
+## v4.4 mobile-first Hero rebuild
+
+- Replaced mobile first view with a compact HTML app preview.
+- Hid the oversized mobile hero image on small screens.
+- Added a short mobile-specific headline: “Workplace English + culture practice.”
+- Kept the longer culture headline for desktop.
+- Compact mobile header so the app identity and CTA fit on one line.
+- Capped explanation images and removed final CTA image on mobile to avoid distorted/tall display.

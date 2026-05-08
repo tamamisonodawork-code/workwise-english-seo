@@ -1333,3 +1333,263 @@ h1, h2 {
     font-size: 13px;
   }
 }
+
+
+/* ===== v4.4 mobile-first hero rebuild =====
+   Fixes mobile first-view: compact header, clear app preview, no oversized image above copy. */
+.mobile-copy,
+.mobile-app-preview {
+  display: none;
+}
+.hero-cta-note {
+  margin: -4px 0 14px;
+  color: #4b5d76;
+  font-size: 14px;
+  font-weight: 750;
+}
+@media (max-width: 720px) {
+  .desktop-copy {
+    display: none !important;
+  }
+  .mobile-copy {
+    display: inline !important;
+  }
+  .site-header {
+    position: sticky;
+    top: 0;
+    z-index: 50;
+    background: rgba(255,255,255,.94);
+    backdrop-filter: blur(14px);
+  }
+  .header-inner {
+    min-height: 62px !important;
+    gap: 10px;
+    padding-top: 8px;
+    padding-bottom: 8px;
+  }
+  .brand {
+    gap: 8px;
+    min-width: 0;
+    flex: 1 1 auto;
+  }
+  .brand-mark {
+    width: 40px !important;
+    height: 40px !important;
+    min-width: 40px;
+    border-radius: 12px !important;
+    font-size: 20px !important;
+  }
+  .brand span:last-child {
+    white-space: nowrap;
+    font-size: 22px !important;
+    line-height: 1 !important;
+    letter-spacing: -0.035em;
+  }
+  .header-actions {
+    flex: 0 0 auto;
+  }
+  .header-actions .btn {
+    height: 42px !important;
+    min-width: 104px !important;
+    padding: 0 14px !important;
+    border-radius: 14px !important;
+    font-size: 14px !important;
+    line-height: 1 !important;
+    justify-content: center !important;
+    text-align: center !important;
+  }
+
+  .hero-v4 {
+    padding: 18px 0 24px !important;
+  }
+  .hero-v4-grid {
+    display: block !important;
+  }
+  .hero-v4 .hero-copy {
+    max-width: none !important;
+  }
+  .hero-v4 .hero-visual-v4 {
+    display: none !important;
+  }
+  .hero-v4 .hero-eyebrow {
+    margin: 0 0 12px !important;
+    padding: 7px 12px !important;
+    font-size: 12px !important;
+  }
+  .hero-v4 h1 {
+    margin: 0 0 12px !important;
+    font-size: clamp(34px, 9.5vw, 43px) !important;
+    line-height: 1.02 !important;
+    letter-spacing: -0.06em !important;
+  }
+  .hero-v4 h1::after {
+    width: 66px !important;
+    height: 5px !important;
+    margin-top: 10px !important;
+  }
+  .hero-lead {
+    margin: 0 0 14px !important;
+    font-size: 16px !important;
+    line-height: 1.48 !important;
+  }
+  .mobile-app-preview {
+    display: block !important;
+    margin: 14px 0 16px;
+    padding: 14px;
+    border: 1px solid rgba(16,35,74,.10);
+    border-radius: 22px;
+    background:
+      radial-gradient(circle at 90% 0%, rgba(17,134,141,.12), transparent 42%),
+      #ffffff;
+    box-shadow: 0 18px 48px rgba(16,35,74,.10);
+    color: var(--navy);
+  }
+  .preview-top {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 10px;
+    padding-bottom: 10px;
+    border-bottom: 1px solid rgba(16,35,74,.08);
+    font-weight: 900;
+  }
+  .preview-top strong {
+    padding: 4px 8px;
+    border-radius: 999px;
+    background: rgba(17,134,141,.10);
+    color: #08767b;
+    font-size: 12px;
+  }
+  .preview-scenario {
+    margin: 10px 0;
+    padding: 10px 12px;
+    border-radius: 14px;
+    background: rgba(235,244,247,.75);
+    font-size: 13px;
+    font-weight: 800;
+  }
+  .preview-row {
+    display: grid;
+    gap: 5px;
+    margin: 8px 0;
+    padding: 10px 12px;
+    border-radius: 15px;
+    font-size: 12px;
+  }
+  .preview-row span {
+    font-weight: 850;
+  }
+  .preview-row b {
+    font-size: 15px;
+    line-height: 1.25;
+  }
+  .preview-row em {
+    justify-self: start;
+    font-style: normal;
+    font-size: 11px;
+    font-weight: 900;
+    padding: 4px 8px;
+    border-radius: 999px;
+  }
+  .preview-row.warning {
+    background: rgba(234,124,99,.10);
+    border: 1px solid rgba(234,124,99,.18);
+  }
+  .preview-row.warning span,
+  .preview-row.warning em {
+    color: #b8523f;
+  }
+  .preview-row.warning em {
+    background: rgba(234,124,99,.13);
+  }
+  .preview-row.success {
+    background: rgba(17,134,141,.09);
+    border: 1px solid rgba(17,134,141,.18);
+  }
+  .preview-row.success span,
+  .preview-row.success em {
+    color: #08767b;
+  }
+  .preview-row.success em {
+    background: rgba(17,134,141,.12);
+  }
+  .preview-note {
+    margin-top: 10px;
+    padding: 10px 12px;
+    border-radius: 14px;
+    background: rgba(16,35,74,.04);
+    color: #43546f;
+    font-size: 12px;
+    font-weight: 750;
+    line-height: 1.35;
+  }
+  .hero-actions {
+    display: grid !important;
+    grid-template-columns: 1fr 1fr;
+    gap: 10px !important;
+    margin: 0 0 8px !important;
+  }
+  .hero-actions .btn {
+    min-height: 46px !important;
+    width: 100%;
+    padding: 12px 8px !important;
+    justify-content: center !important;
+    text-align: center !important;
+    font-size: 15px !important;
+  }
+  .hero-cta-note {
+    margin: 2px 0 10px !important;
+    font-size: 12px !important;
+  }
+  .hero-level {
+    margin-top: 2px !important;
+    font-size: 12px !important;
+    line-height: 1.25;
+    padding: 7px 10px !important;
+  }
+  .hero-trust-line {
+    font-size: 12px !important;
+    line-height: 1.35;
+  }
+  .hero-benefits {
+    display: none !important;
+  }
+  .definition-line {
+    display: none !important;
+  }
+
+  /* Prevent explanation images from becoming tall distorted columns */
+  .difference-example {
+    margin-top: 18px !important;
+  }
+  .difference-example img {
+    width: 100% !important;
+    height: auto !important;
+    max-height: 260px !important;
+    object-fit: contain !important;
+    border-radius: 18px !important;
+  }
+
+  /* Final CTA should not dominate mobile */
+  .final-cta .inner {
+    padding: 26px 20px !important;
+  }
+  .final-cta h2 {
+    font-size: 28px !important;
+    line-height: 1.08 !important;
+  }
+  .final-cta p {
+    font-size: 14px !important;
+  }
+  .final-cta img {
+    display: none !important;
+  }
+  .footer .brand span:last-child {
+    white-space: normal;
+    font-size: 26px !important;
+  }
+  .footer-links {
+    gap: 18px !important;
+    font-size: 17px !important;
+  }
+}
