@@ -35,19 +35,18 @@ Understand what people really mean. Know what to say next. Work smoother. Grow f
 - Improved header Start Free button centering and mobile sizing.
 
 
-## v4.3 GitHub upload-ready updates
+## v4.5 responsive mobile Hero
 
-- Added a mobile-first Hero image that immediately explains the app on smartphone screens.
-- Mobile now shows the Hero image before the HTML copy.
-- Added the clear “Too direct → More professional” visual as the difference/explanation image.
-- Kept SEO/AEO metadata, FAQPage JSON-LD, WebApplication JSON-LD, robots.txt, sitemap.xml, and mobile CTA fixes.
+- Mobile Hero image remains visible.
+- Mobile uses an app-focused responsive image instead of hiding the visual.
+- Mobile image is capped at 235px height to keep the first view compact.
+- Mobile headline is shortened while desktop headline remains unchanged.
+- Hero benefits are compact on mobile.
+- Difference and final CTA images remain visible but capped to prevent stretching.
 
 
-## v4.4 mobile-first Hero rebuild
+## v4.6 hard override
 
-- Replaced mobile first view with a compact HTML app preview.
-- Hid the oversized mobile hero image on small screens.
-- Added a short mobile-specific headline: “Workplace English + culture practice.”
-- Kept the longer culture headline for desktop.
-- Compact mobile header so the app identity and CTA fit on one line.
-- Capped explanation images and removed final CTA image on mobile to avoid distorted/tall display.
+- Added final CSS override to force the mobile Hero image to display.
+- Mobile Hero uses a 16:9 responsive image container and `object-fit: cover` to avoid strange blank spaces.
+- Removed any possible mobile app preview display so the actual image remains visible.

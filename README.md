@@ -35,10 +35,10 @@ SEO/AEO-ready static site for Workwise English.
 
 Progress is saved in the user’s browser. Use Export / Import to back up or move learning history.
 
-## v4.3
+## v4.5
 
-GitHub upload-ready build with mobile-first Hero image and before/after difference image.
+Responsive mobile Hero with image visible and compact first-view layout.
 
-## v4.4
+## v4.6
 
-Mobile-first Hero rebuild with compact HTML app preview for clearer smartphone first view.
+Hard CSS override to force mobile Hero image visible with 16:9 responsive sizing.
