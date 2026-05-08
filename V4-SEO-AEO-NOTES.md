@@ -33,3 +33,10 @@ Understand what people really mean. Know what to say next. Work smoother. Grow f
 - Tightened CTA copy and added “No signup. No credit card. Opens in your browser.”
 - Reinforced culture-first copy consistency.
 - Improved header Start Free button centering and mobile sizing.
+
+
+## v4.2 mobile Hero fix
+
+- Replaced the mobile hero image with an app-focused visual instead of a text-heavy full hero image.
+- Mobile now shows the HTML copy first, then the app image.
+- This prevents duplicated tiny text inside the image and keeps the first view easier to understand.

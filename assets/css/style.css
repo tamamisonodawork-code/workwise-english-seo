@@ -1264,3 +1264,31 @@ h1, h2 {
     max-height: 280px;
   }
 }
+
+
+/* ===== v4.2 mobile hero fix =====
+   Mobile was showing a text-heavy vertical hero image above the actual HTML copy.
+   Fix: show copy first, then an app-only image. */
+@media (max-width: 720px) {
+  .hero-v4 .hero-copy {
+    order: 1 !important;
+  }
+  .hero-v4 .hero-visual-v4 {
+    order: 2 !important;
+  }
+  .hero-v4 {
+    padding-top: 22px;
+  }
+  .hero-v4 .hero-eyebrow {
+    margin-top: 4px;
+  }
+  .hero-v4 .hero-visual-v4 img {
+    max-height: none;
+    width: 100%;
+    object-fit: contain;
+    border-radius: 20px;
+  }
+  .hero-v4-grid {
+    gap: 22px;
+  }
+}
